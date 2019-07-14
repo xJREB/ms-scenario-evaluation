@@ -1,0 +1,28 @@
+{
+  "extends": "tslint:recommended",
+  "rulesDirectory": [],
+  "rules": {
+    "arrow-parens": true,
+    "member-access": [true, "check-accessor"],
+    "prefer-const": [true, {"destructuring": "all"}],
+    "indent": [
+      true,
+      "spaces",
+      2
+    ],
+    "quotemark": [
+      true,
+      "double"
+    ],
+    "trailing-comma": [
+      true,
+      {
+        "multiline": {
+          "objects": "never",
+          "arrays": "never",
+          "functions": "never"
+        }
+      }
+    ]
+  }
+}

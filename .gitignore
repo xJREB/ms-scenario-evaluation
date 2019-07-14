@@ -1,0 +1,20 @@
+# git ls-files --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+*.settings
+*.classpath
+node_modules
+dist
+build
+target
+npm-debug.log
+.vscode
+typings
+build.log.json
+coverage/
+*.idea
+bin
+
+# R
+.Rproj.user
+*.Rproj
+.Rhistory

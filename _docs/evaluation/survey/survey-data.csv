@@ -1,0 +1,41 @@
+id,effort_hours-familiarity,effort_hours-precision,effort_hours-applicability,effort_loc-familiarity,effort_loc-precision,effort_loc-applicability,effort_ordinal-scale-familiarity,effort_ordinal-scale-precision,effort_ordinal-scale-applicability,effort_cosmic-fp-familiarity,effort_cosmic-fp-precision,effort_cosmic-fp-applicability,effort_story-points-familiarity,effort_story-points-precision,effort_story-points-applicability,effort_other,evaluation_usefulness-critical-service-most-modified,evaluation_usefulness-critical-service-highest-effort,evaluation_usefulness-avg-effort-per-scenario,evaluation_usefulness-change-impacting-most-services,evaluation_usefulness-number-of-affected-services-per-scenario,evaluation_other,demographics_active-field,demographics_years-of-experience,demographics_used-scenarios-before,demographics_familiarity-scenarios,demographics_familiarity-services
+1,4,4,3,5,2,4,4,4,5,1,2,3,5,5,4,,4,5,2,4,5,,Academia,5,1,3,4
+2,4,3,4,2,1,1,3,2,3,1,4,4,4,4,4,test complexity (but how is difficulty measured then...),5,5,3,3,5,,Academia,5,0,2,2
+3,4,2,3,2,3,1,2,3,3,1,3,3,4,4,4,Story Points or hours,4,3,2,3,4,,Industry,2,1,3,4
+4,5,3,4,5,2,2,4,4,4,4,3,2,4,4,4,"Libraries touched, modules touched, team size, team skill, programming language used, test coverage per module/system ",5,5,4,2,4,"Algorithmic complexity (routing >> new UI). Distribuition of chamges: 10% ui, 20% db, 70% route calc;  test coverage of exisiting functionality",Industry,10,0,1,4
+5,4,2,3,2,1,1,4,3,2,1,1,1,4,3,2,,1,2,1,2,4,,Industry,10,0,1,4
+6,2,1,1,2,2,1,2,2,1,1,1,1,3,2,2,,4,3,4,5,5,,Industry,6,1,3,4
+7,2,2,2,3,2,2,3,1,2,1,2,2,3,3,2,,3,4,3,4,2,,Both,15,1,4,4
+8,4,3,3,4,3,3,1,2,2,1,2,2,1,2,2,,4,4,4,4,4,,Academia,25,1,3,5
+9,5,2,2,3,2,2,3,3,3,1,3,3,4,4,4,,2,3,1,3,3,"Graphical representation of how severe the impact of the change to the affected service is. Eg.: readonly -access to a database service is less impactful than a database-redesign. Additionally, the 2nd - 6th most impactful change might also be nearly as impactful as the most. I mean I need some kind of boxplot information on the distribution of the tasks. Or a Bubble / scatter Diagram (e.g. axes: complexity vs. impact)",Both,6,1,5,5
+10,4,1,1,3,1,1,1,1,1,1,1,1,5,3,3,#noEstimates,3,3,1,3,3,,Industry,6,0,1,5
+11,5,1,3,3,1,1,2,1,1,1,4,4,5,4,5,,3,5,2,5,5,,Academia,5,0,1,2
+12,3,3,3,3,2,2,1,1,1,1,1,1,1,1,1,,3,3,3,3,3,,Academia,5,0,1,4
+13,5,5,5,5,5,5,5,5,5,4,4,4,4,4,4,"Using IFPUG combined with the estimation based on COSMIC, expert based models",4,4,4,5,4,,Academia,8,1,4,4
+14,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,,1,1,1,1,1,,Both,7,1,3,2
+15,3,2,4,3,2,2,4,3,4,1,1,1,4,3,4,Looking at the parameters of the service interface,4,4,3,4,4,,Both,10,1,5,4
+16,5,4,4,5,3,4,4,2,3,3,2,3,5,3,5,Strory Points,2,3,2,4,4,,Both,5,0,3,3
+17,4,4,4,3,2,1,5,4,4,2,4,2,4,4,4,,5,4,3,5,5,Scenario that impacts most services,Both,6,0,4,5
+18,5,5,3,5,3,3,5,3,4,1,1,1,1,1,1,,4,4,3,4,4,,Academia,5,1,3,5
+19,5,3,3,2,3,3,1,2,2,1,3,3,5,3,4,,1,2,3,2,2,,Industry,15,0,2,4
+20,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,,3,3,3,3,3,,Academia,6,0,5,5
+21,3,3,3,1,1,1,2,2,2,1,1,1,5,5,5,,4,4,4,4,5,,Both,6,1,4,4
+22,5,4,2,5,3,3,1,3,2,1,4,4,1,4,4,Effort associated to service interface complexity metrics:  https://doi.org/10.1109/ICCNI.2017.8123807,3,4,3,3,5,,Academia,18,0,3,5
+23,4,2,4,3,2,3,2,2,3,1,4,4,2,3,3,,4,3,2,3,4,,Academia,15,1,3,3
+24,5,2,1,1,1,1,1,4,3,1,2,2,5,4,4,,5,2,1,5,5,,Academia,8,0,1,5
+25,5,4,5,2,2,2,3,3,3,1,3,3,1,4,4,,2,3,3,3,4,,Industry,10,0,2,3
+26,5,3,4,2,3,1,1,1,1,2,4,3,5,4,4,,4,4,2,2,4,Estimated business value that this change will generate.,Industry,18,1,3,5
+27,4,3,4,4,2,3,1,1,1,1,1,1,1,1,1,,3,3,3,3,4,,Academia,5,1,3,5
+28,4,2,3,1,1,1,4,3,4,1,4,4,5,4,4,,5,3,2,5,5,,Industry,6,0,2,4
+29,3,5,5,5,2,2,5,3,5,1,3,3,5,1,3,,3,4,2,4,4,,Both,2,0,1,4
+30,5,5,5,2,1,2,5,3,5,2,3,3,4,5,5,,4,4,5,3,3,how How many (automated) tests are available for a scenario?,Industry,20,1,3,5
+31,4,2,3,4,3,4,5,3,3,2,3,2,3,3,3,,4,3,3,4,4,,Industry,3,0,3,3
+32,5,3,5,5,4,5,5,3,5,1,1,1,5,4,5,,2,2,3,1,1,,Both,30,1,5,5
+33,5,3,4,1,1,1,1,1,1,1,1,1,5,4,4,,4,4,1,3,4,,Industry,22,1,4,5
+34,5,3,4,5,2,2,5,3,4,1,3,3,3,3,4,,3,4,4,4,4,"Timeframe in which some, but not all affected services have been modified",Both,15,0,3,4
+35,5,2,3,3,2,1,3,3,3,3,3,3,4,3,4,Comparison with other projects,5,5,2,5,5,,Academia,32,1,4,2
+36,5,4,5,4,3,2,4,4,4,4,3,3,3,3,3,wideband delphi method,2,2,2,2,2,Number of dependent components and service duration for example,Both,25,1,4,4
+37,4,4,2,2,1,2,5,3,5,1,3,3,4,3,4,,5,4,2,3,5,,Industry,10,0,2,4
+38,5,5,5,4,5,4,5,4,5,4,4,4,5,5,5,,5,5,5,4,4,,Both,12,1,3,5
+39,2,2,2,1,1,2,1,3,3,1,3,3,1,3,3,"nothing ""exact"" like hours or loc but rather something abstract",5,4,3,4,5,,Industry,7,0,1,5
+40,5,3,3,5,3,3,2,2,2,1,1,1,3,3,3,Estimated number of services,2,2,2,4,5,,Both,13,0,2,5

@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+        "module": "esnext",
+        "allowJs": true,
+        "importHelpers": true,
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true
+    },
+    "exclude": ["node_modules"]
+}

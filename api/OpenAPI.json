@@ -1,0 +1,409 @@
+{
+    "info": {
+        "title": "modifiability-scenario-creator-api",
+        "version": "0.0.2",
+        "license": {
+            "name": "Apache-2.0"
+        },
+        "description": "[Specification JSON](/api-spec)\n\nAPI to create and evaluate software modifiability scenarios"
+    },
+    "paths": {
+        "/changes": {
+            "post": {
+                "summary": "/changes",
+                "consumes": ["application/json"],
+                "parameters": [],
+                "responses": {
+                    "100": {
+                        "description": ""
+                    }
+                }
+            },
+            "get": {
+                "summary": "/changes",
+                "consumes": ["application/json"],
+                "parameters": [],
+                "responses": {
+                    "100": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/allChanges": {
+            "post": {
+                "summary": "/allChanges",
+                "consumes": ["application/json"],
+                "parameters": [],
+                "responses": {
+                    "100": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/changes/{id}": {
+            "get": {
+                "summary": "/changes/{id}",
+                "consumes": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "100": {
+                        "description": ""
+                    }
+                }
+            },
+            "put": {
+                "summary": "/changes/{id}",
+                "consumes": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "100": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "summary": "/changes/{id}",
+                "consumes": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "100": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/resetChanges": {
+            "post": {
+                "summary": "/resetChanges",
+                "consumes": ["application/json"],
+                "parameters": [],
+                "responses": {
+                    "100": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/systems/{id}/evaluation": {
+            "get": {
+                "summary": "/systems/{id}/evaluation",
+                "consumes": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "100": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/scenarios": {
+            "post": {
+                "summary": "/scenarios",
+                "consumes": ["application/json"],
+                "parameters": [],
+                "responses": {
+                    "100": {
+                        "description": ""
+                    }
+                }
+            },
+            "get": {
+                "summary": "/scenarios",
+                "consumes": ["application/json"],
+                "parameters": [],
+                "responses": {
+                    "100": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/scenarios/{id}": {
+            "get": {
+                "summary": "/scenarios/{id}",
+                "consumes": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "100": {
+                        "description": ""
+                    }
+                }
+            },
+            "put": {
+                "summary": "/scenarios/{id}",
+                "consumes": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "100": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "summary": "/scenarios/{id}",
+                "consumes": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "100": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/scenario/{id}": {
+            "get": {
+                "summary": "/scenario/{id}",
+                "consumes": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "100": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/services": {
+            "post": {
+                "summary": "/services",
+                "consumes": ["application/json"],
+                "parameters": [],
+                "responses": {
+                    "100": {
+                        "description": ""
+                    }
+                }
+            },
+            "get": {
+                "summary": "/services",
+                "consumes": ["application/json"],
+                "parameters": [],
+                "responses": {
+                    "100": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "summary": "/services",
+                "consumes": ["application/json"],
+                "parameters": [],
+                "responses": {
+                    "100": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/services/{id}": {
+            "get": {
+                "summary": "/services/{id}",
+                "consumes": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "100": {
+                        "description": ""
+                    }
+                }
+            },
+            "put": {
+                "summary": "/services/{id}",
+                "consumes": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "100": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "summary": "/services/{id}",
+                "consumes": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "100": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/status": {
+            "get": {
+                "summary": "/status",
+                "consumes": ["application/json"],
+                "parameters": [],
+                "responses": {
+                    "100": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/systems": {
+            "post": {
+                "summary": "/systems",
+                "consumes": ["application/json"],
+                "parameters": [],
+                "responses": {
+                    "100": {
+                        "description": ""
+                    }
+                }
+            },
+            "get": {
+                "summary": "/systems",
+                "consumes": ["application/json"],
+                "parameters": [],
+                "responses": {
+                    "100": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/systems/{id}": {
+            "get": {
+                "summary": "/systems/{id}",
+                "consumes": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "100": {
+                        "description": ""
+                    }
+                }
+            },
+            "put": {
+                "summary": "/systems/{id}",
+                "consumes": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "100": {
+                        "description": ""
+                    }
+                }
+            },
+            "delete": {
+                "summary": "/systems/{id}",
+                "consumes": ["application/json"],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "100": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/": {
+            "get": {
+                "summary": "/",
+                "consumes": ["application/json"],
+                "parameters": [],
+                "responses": {
+                    "100": {
+                        "description": ""
+                    }
+                }
+            }
+        }
+    },
+    "swagger": "2.0"
+}

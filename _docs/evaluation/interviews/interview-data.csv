@@ -1,0 +1,8 @@
+id,demographics_years-of-experience,demographics_familiarity-scenarios,demographics_familiarity-services,duration_system-creation,duration_scenario-creation,duration_evaluation,tasks_number-of-changes,tasks_total-scenario-effort,feedback_complexity-system-creation,feedback_usefulness-scenario-categories,feedback_helpfulness-suggested-ripples,feedback_helpfulness-evaluation-view
+1,19,3,2,5,18,4,5,270,2,3,5,4
+2,17,4,3,7,21,4,4,80,2,3,5,4
+3,6,2,3,4,15,3,6,306,1,3,4,4
+4,8,4,2,6,15,4,4,210,1,4,2,5
+5,6,2,2,6,16,6,7,168,1,4,2,4
+6,6,1,3,3,13,2,4,65,1,3,5,4
+7,3,4,2,3,15,2,5,35,1,3,5,4
