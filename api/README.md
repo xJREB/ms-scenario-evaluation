@@ -15,8 +15,10 @@
 -   Run `npm install` in this directory to install dependencies of this project
 -   Install MongoDB and start it on port 27017 (URL and port required by the API are adjustable via setting the ENV variable `DB_HOST`)
     -   Standalone executable: <https://www.mongodb.com/download-center/v2/community>
-    -   Docker example: `docker run --name sbs-eval_mongodb -p 27017:27017 -d mongo:latest`
+    -   Docker example: `docker run --name ms-scenario-evaluation-db -p 27017:27017 -d mongo:4`
 -   Run `npm start`
+    -   API will be available at <http://localhost:3000>
+    -   Swagger UI will be available at <http://localhost:3000/api-docs>
 
 ## Environment Variables for Configuration
 
@@ -38,8 +40,8 @@ npm start
 # build node.js version for production
 npm run build
 
-# start created production build (./dist/)
-npm run prod
+# serve local production build
+npm run start-prod
 
 # run TypeScript linter
 npm run lint
@@ -51,8 +53,7 @@ npm test
 npm run sonar
 ```
 
-
 ## TODOs
 
-- [ ] Fix test
-- [ ] Investigate mongoose issues and upgrade to newest version
+-   [ ] Fix test
+-   [ ] Investigate mongoose issues and upgrade to newest version

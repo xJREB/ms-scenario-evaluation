@@ -10,7 +10,15 @@
 -   `src/App.vue`: basic app skeleton with header/nav, body, and footer
 -   `src/config/index.ts`: configuration file with app or environment specific properties
 
-## Build Setup
+## Prerequisites and Usage
+
+-   Install Node.js: <https://nodejs.org/en/download/>
+-   Run `npm install` in this directory to install dependencies of this project
+-   The frontend expects the `api` to run on <http://localhost:3000> (adjustable in `src/config/index.ts`)
+-   Run `npm start`
+-   Your browser will open the frontend at <http://localhost:8000> and you can start using the application
+
+## Detailed Build Setup and Commands
 
 ```bash
 # install dependencies
@@ -21,6 +29,9 @@ npm start
 
 # build for production with minification
 npm run build
+
+# serve local production build
+npm run start-prod
 
 # run TypeScript linter
 npm run lint

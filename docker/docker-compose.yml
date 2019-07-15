@@ -1,0 +1,23 @@
+version: "3"
+services:
+    # MongoDB
+    ms-scenario-evaluation-db:
+        container_name: ms-scenario-evaluation-db
+        image: mongo:4
+        ports:
+            - 27017:27017
+        volumes:
+            - ms-scenario-evaluation-volume:/data/db
+    # Application components (API and web frontend)
+    ms-scenario-evaluation:
+        container_name: ms-scenario-evaluation
+        image: xjreb/ms-scenario-evaluation:latest
+        ports:
+            - 3000:3000
+            - 8000:80
+        environment:
+            - DB_HOST=ms-scenario-evaluation-db:27017
+        depends_on:
+            - ms-scenario-evaluation-db
+volumes:
+    ms-scenario-evaluation-volume:
