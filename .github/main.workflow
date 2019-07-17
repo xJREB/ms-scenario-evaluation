@@ -5,7 +5,7 @@ workflow "Build and Test" {
 
 action "Frontend: Install Libs" {
   uses = "actions/npm@master"
-  args = "npm install --prefix ./frontend ./frontend"
+  args = "install --prefix ./frontend ./frontend"
 }
 
 action "Frontend: Build" {
