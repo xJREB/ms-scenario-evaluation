@@ -5,11 +5,11 @@ workflow "Build and Test" {
 
 action "Frontend: Install Libs" {
   uses = "actions/npm@master"
-  runs = "cd ./frontend && npm install"
+  runs = "bash -c \"cd ./frontend && npm install\""
 }
 
 action "Frontend: Build" {
   uses = "actions/npm@master"
   needs = ["Frontend: Install Libs"]
-  runs = "cd ./frontend && npm run build"
+  runs = "bash -c \"cd ./frontend && npm run build\""
 }
