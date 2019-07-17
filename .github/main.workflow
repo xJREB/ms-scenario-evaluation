@@ -1,7 +1,7 @@
 workflow "Build and Test" {
   resolves = [
     "Frontend: Build",
-    "API: Build",
+    "API: SonarQube",
   ]
   on = "push"
 }
@@ -26,4 +26,11 @@ action "API: Build" {
   uses = "actions/npm@master"
   needs = ["API: Install Libs"]
   args = "run build --prefix ./api"
+}
+
+action "API: SonarQube" {
+  uses = "actions/npm@master"
+  needs = ["API: Build"]
+  args = "run sonar --prefix ./api -- -Dsonar.login=$SONAR_LOGIN"
+  secrets = ["GITHUB_TOKEN", "SONAR_LOGIN"]
 }
