@@ -1,6 +1,12 @@
 # Details of the Scenario-Based Method
 
-The goal of our method is to provide qualitative scenario-based evolvability evaluation for service- and microservice-based systems with reasonable manual effort. By focusing on limited system types and one quality attribute, we can rely on a more precise terminology and change categorization. Furthermore, we can assume a decent degree of service independence as well as a clean separation of service interface and implementation. Changes that do not modify a service interface usually do not propagate to service consumers. Lastly, we also tried to keep the method lightweight by focusing on simplicity and tool support.
+The goal of our method is to provide qualitative scenario-based evolvability evaluation for service- and microservice-based systems with reasonable manual effort. By focusing on limited system types and one quality attribute, we can rely on a more precise terminology and change categorization. Furthermore, we can assume a decent degree of service independence as well as a clean separation of service interface and implementation. Changes that do not modify a service interface usually do not propagate to service consumers. Lastly, we also tried to keep the method lightweight by focusing on simplicity and tool support. To illustrate the method, an example system with scenarios is also part of the tool.
+
+## Research Design
+
+To create the method, we first analyzed existing scenario-based methods like SAAM, ATAM, and ALMA, but also specifically searched for lightweight or service-based approaches. Based on these results, we designed our own method in an iterative way. A design candidate for the method was implemented in a web-based tool and demonstrated by applying it to an example system. Method and tool were then analyzed for possible improvements, which were incorporated into the method. This started the next iteration. Once a mature state for method and tool was reached, we evaluated this version with an online survey as well as hands-on interviews. These evaluation results were then used to improve method and tool for a second time.
+
+![Research Process](img/research-process.png)
 
 ## Conceptual Model
 
@@ -14,7 +20,7 @@ The model presented above is the foundation for the four different process steps
 
 1. **Describe the system architecture** a list of _Services_ with a short description and (optionally) dependencies between them is created. This step has to be performed by technical stakeholders like developers or architects. If the _System_ is very large, a subset can be modeled instead, e.g. a domain.
 2. **Elicit evolution scenarios** possible future evolution _Scenarios_ are collected and documented. Fitting candidates are cases fairly likely to happen or cases intuitively posing high risk for the _System_. For a broad range of _Scenarios_, business and domain experts should be included in this step.
-3. **Per scenario, specify and estimate changes** the details and impact of the identified _Scenarios_ are now worked out by documenting the concrete _Changes_. This step again requires technical stakeholders.
+3. **Specify and estimate changes for each scenario** the details and impact of the identified _Scenarios_ are now worked out by documenting the concrete _Changes_. This step again requires technical stakeholders.
     - **Specify and estimate initial changes** the initial set of _Changes_ (one per affected _Service_) is defined and the _Effort_ for each _Change_ is estimated. Stakeholders should agree on a single estimation technique, e.g. _hours_. If work in this step is distributed, stakeholders should first calibrate their estimation with some example _Changes_.
     - **Identify ripple effects** for each _Change_, potential ripple effects to other _Services_ are identified and documented as new _Changes_. Service interface _Changes_ are especially important for this step.
 4. **Evaluate results** created _Scenarios_ are analyzed, estimated _Effort_ is aggregated, and _Evaluation_ metrics are calculated. Based on this, _System_ evolvability is interpreted, weak spots are identified, and architecture improvements are derived. This step should be a synchronized group activity.

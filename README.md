@@ -4,7 +4,7 @@
 
 ![Domain Model](_docs/method/img/meta-model.png)
 
-For more information on the scenario-based method and its evaluation, see the [\_docs](_docs) folder. The tool consists of three main components, namely a RESTful API implemented with Node.js (see `api` folder), a MongoDB for data persistence, and a web-based frontend for end-user access implemented with Vue.js (see `frontend` folder).
+For more information on the scenario-based method and its evaluation, see the [\_docs](_docs) folder. To illustrate the method, an example system with scenarios is also part of the tool. The tool consists of three main components, namely a RESTful API implemented with Node.js (see `api` folder), a MongoDB for data persistence, and a web-based frontend for end-user access implemented with Vue.js (see `frontend` folder).
 
 ## Quick Start Guide
 
