@@ -19,7 +19,7 @@ action "Frontend: Build" {
 
 action "API: Install Libs" {
   uses = "actions/npm@master"
-  args = "install --prefix ./api. /api"
+  args = "install --prefix ./api /api"
 }
 
 action "API: Build" {
