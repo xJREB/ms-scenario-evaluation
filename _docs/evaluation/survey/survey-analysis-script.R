@@ -85,7 +85,13 @@ data %>%
   rename("I am familiar with Cosmic FP estimation" = effort_cosmic.fp.familiarity) %>%
   rename("I am familiar with story points estimation" = effort_story.points.familiarity) %>%
   likert() %>%
-  plot(type = "bar")
+  plot(type = "bar", text.size = 4.5, wrap = 30) +
+  theme(
+    text = element_text(size = 16, face = "bold"),
+    legend.title = element_text(size = 0, color = "white"),
+    legend.text = element_text(size = 12),
+    legend.position =  "right"
+  )
 # plot(type = "heat")
 # plot(type = "density")
 
@@ -108,7 +114,7 @@ data %>%
   mutate(effort_cosmic.fp.precision = factor(effort_cosmic.fp.precision, levels = likertLevels, ordered = TRUE, labels = likertLabels)) %>% 
   mutate(effort_story.points.precision = factor(effort_story.points.precision, levels = likertLevels, ordered = TRUE, labels = likertLabels)) %>%
   rename("Estimating with hours is precise" = effort_hours.precision) %>%
-  rename("Estimating with LoC is precise" = effort_loc.precision) %>%
+  rename("Estimating with LOC is precise" = effort_loc.precision) %>%
   rename("Estimating with an ordinal scale (1-10) is precise" = effort_ordinal.scale.precision) %>%
   rename("Estimating with Cosmic FP is precise" = effort_cosmic.fp.precision) %>%
   rename("Estimating with story points is precise" = effort_story.points.precision) %>%
@@ -118,7 +124,7 @@ data %>%
     text = element_text(size = 16, face = "bold"),
     legend.title = element_text(size = 0, color = "white"),
     legend.text = element_text(size = 12),
-    legend.position =  "right"
+    legend.position =  "bottom"
   )
 
 data %>%
@@ -140,7 +146,7 @@ data %>%
   mutate(effort_cosmic.fp.applicability = factor(effort_cosmic.fp.applicability, levels = likertLevels, ordered = TRUE, labels = likertLabels)) %>%
   mutate(effort_story.points.applicability = factor(effort_story.points.applicability, levels = likertLevels, ordered = TRUE, labels = likertLabels)) %>%
   rename("Hours are applicable for the method" = effort_hours.applicability) %>%
-  rename("LoC are applicable for the method" = effort_loc.applicability) %>%
+  rename("LOC are applicable for the method" = effort_loc.applicability) %>%
   rename("An ordinal scale (1-10) is applicable for the method" = effort_ordinal.scale.applicability) %>%
   rename("Cosmic FP are applicable for the method" = effort_cosmic.fp.applicability) %>%
   rename("Story Points are applicable for the method" = effort_story.points.applicability) %>%
@@ -150,7 +156,7 @@ data %>%
     text = element_text(size = 16, face = "bold"),
     legend.title = element_text(size = 0, color = "white"),
     legend.text = element_text(size = 12),
-    legend.position =  "right"
+    legend.position =  "bottom"
   )
 
 data %>%
@@ -178,13 +184,19 @@ data %>%
   mutate(evaluation_usefulness.avg.effort.per.scenario = factor(evaluation_usefulness.avg.effort.per.scenario, levels = likertLevels, ordered = TRUE, labels = likertLabels)) %>%
   mutate(evaluation_usefulness.change.impacting.most.services = factor(evaluation_usefulness.change.impacting.most.services, levels = likertLevels, ordered = TRUE, labels = likertLabels)) %>%
   mutate(evaluation_usefulness.number.of.affected.services.per.scenario = factor(evaluation_usefulness.number.of.affected.services.per.scenario, levels = likertLevels, ordered = TRUE, labels = likertLabels)) %>%
-  rename("Most modified service is a useful metric" = evaluation_usefulness.critical.service.most.modified) %>%
-  rename("Service with highest effort is a useful metric" = evaluation_usefulness.critical.service.highest.effort) %>%
-  rename("Avg effort / scenario is a useful metric" = evaluation_usefulness.avg.effort.per.scenario) %>%
-  rename("Change impacting most services is a useful metric" = evaluation_usefulness.change.impacting.most.services) %>%
-  rename("# of affected services / scenario is a useful metric" = evaluation_usefulness.number.of.affected.services.per.scenario) %>%
+  rename("Most Modified Service is a useful metric" = evaluation_usefulness.critical.service.most.modified) %>%
+  rename("Service with Highest Effort is a useful metric" = evaluation_usefulness.critical.service.highest.effort) %>%
+  rename("AVG Effort / Scenario is a useful metric" = evaluation_usefulness.avg.effort.per.scenario) %>%
+  rename("Change Impacting Most Services is a useful metric" = evaluation_usefulness.change.impacting.most.services) %>%
+  rename("# of Affected Services / Scenario is a useful metric" = evaluation_usefulness.number.of.affected.services.per.scenario) %>%
   likert() %>%
-  plot(type = "bar")
+  plot(type = "bar", text.size = 4.5, wrap = 30) +
+  theme(
+    text = element_text(size = 16, face = "bold"),
+    legend.title = element_text(size = 0, color = "white"),
+    legend.text = element_text(size = 12),
+    legend.position =  "bottom"
+  )
 
 data %>%
   select(contains("evaluation_usefulness.")) %>%
