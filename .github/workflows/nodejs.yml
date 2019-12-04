@@ -1,0 +1,28 @@
+name: Node CI Build
+
+on: [push]
+
+jobs:
+  buildAPI:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [8.x, 10.x, 12.x]
+    env:
+      CI: true
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v1
+    - name: Setup Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Install dependencies
+      run: npm install --prefix ./api ./api
+    - name: Build
+      run: npm run build --prefix ./api
+    - name: SonarQube analysis
+      env:
+        SONAR_LOGIN: ${{ secrets.SONAR_LOGIN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: npm run sonar --prefix ./api -- -Dsonar.login=$SONAR_LOGIN
