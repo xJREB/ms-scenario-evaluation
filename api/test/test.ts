@@ -1,6 +1,6 @@
 import { ObjectID } from "bson";
 import { expect } from "chai";
-import MongoMemoryServer from "mongodb-memory-server";
+import { MongoMemoryServer } from "mongodb-memory-server";
 import { findCriticalService, getEffort, getTotalAffectedServices } from "../src/evaluation";
 
 process.env.DB_HOST = process.env.DB_HOST || "localhost:27017";

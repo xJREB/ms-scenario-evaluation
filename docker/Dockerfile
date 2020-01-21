@@ -3,7 +3,7 @@
 ####################################################################
 # Node Builder
 ####################################################################
-FROM node:10 as nodeBuilder
+FROM node:12 as nodeBuilder
 WORKDIR /app
 
 # Clone the web UI repo
@@ -19,7 +19,7 @@ RUN cd ms-scenario-evaluation/frontend && npm i --no-progress && npm run build
 ####################################################################
 # Final Image
 ####################################################################
-FROM node:10-alpine
+FROM node:12-alpine
 WORKDIR /app
 
 # Update repositories
