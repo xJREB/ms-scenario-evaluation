@@ -6,7 +6,7 @@ import System from "./models/System";
 export function createSystem() {
     const system = new System({
         description:
-            "Uber is system that bring car drivers and passengers together. The passenger can book his destination and a driver can accept the order.",
+            "Uber is a system that brings car drivers and passengers together. The passenger can book a ride and a driver can accept the order.",
         name: "Uber"
     });
     system.save(e => {
