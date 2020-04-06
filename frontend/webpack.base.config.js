@@ -43,9 +43,6 @@ module.exports = {
             {
                 test: /\.html$/,
                 loader: "html-loader",
-                options: {
-                    name: "[name].[ext]"
-                },
                 exclude: /node_modules/
             },
             {
