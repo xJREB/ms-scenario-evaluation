@@ -5,7 +5,7 @@ import * as express from "express";
 import * as logger from "morgan";
 
 class App {
-    public express: express.Application;
+    public express: express.Express;
 
     constructor(router: express.Router) {
         this.express = express();
